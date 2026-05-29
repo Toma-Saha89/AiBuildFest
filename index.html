@@ -1581,15 +1581,7 @@
     }
     function openGetStarted(e) {
       if (e) e.preventDefault();
-      // reset to step 1
-      document.querySelectorAll('.gs-step').forEach(s => s.classList.remove('active'));
-      document.getElementById('gs-step-1').classList.add('active');
-      ['dot-1', 'dot-2', 'dot-3'].forEach((d, i) => {
-        const el = document.getElementById(d);
-        el.classList.remove('active', 'done');
-        if (i === 0) el.classList.add('active');
-      });
-      openModal('modal-get-started');
+      window.location.href = 'https://researchbuddy-1028391070566.asia-southeast1.run.app/';
     }
     function openHowItWorks(e) {
       if (e) e.preventDefault();
